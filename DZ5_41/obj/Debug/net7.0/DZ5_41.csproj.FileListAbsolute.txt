@@ -1,0 +1,15 @@
+C:\homeworke 5_2\DZ5_41\bin\Debug\net7.0\DZ5_41.exe
+C:\homeworke 5_2\DZ5_41\bin\Debug\net7.0\DZ5_41.deps.json
+C:\homeworke 5_2\DZ5_41\bin\Debug\net7.0\DZ5_41.runtimeconfig.json
+C:\homeworke 5_2\DZ5_41\bin\Debug\net7.0\DZ5_41.dll
+C:\homeworke 5_2\DZ5_41\bin\Debug\net7.0\DZ5_41.pdb
+C:\homeworke 5_2\DZ5_41\obj\Debug\net7.0\DZ5_41.csproj.AssemblyReference.cache
+C:\homeworke 5_2\DZ5_41\obj\Debug\net7.0\DZ5_41.GeneratedMSBuildEditorConfig.editorconfig
+C:\homeworke 5_2\DZ5_41\obj\Debug\net7.0\DZ5_41.AssemblyInfoInputs.cache
+C:\homeworke 5_2\DZ5_41\obj\Debug\net7.0\DZ5_41.AssemblyInfo.cs
+C:\homeworke 5_2\DZ5_41\obj\Debug\net7.0\DZ5_41.csproj.CoreCompileInputs.cache
+C:\homeworke 5_2\DZ5_41\obj\Debug\net7.0\DZ5_41.dll
+C:\homeworke 5_2\DZ5_41\obj\Debug\net7.0\refint\DZ5_41.dll
+C:\homeworke 5_2\DZ5_41\obj\Debug\net7.0\DZ5_41.pdb
+C:\homeworke 5_2\DZ5_41\obj\Debug\net7.0\DZ5_41.genruntimeconfig.cache
+C:\homeworke 5_2\DZ5_41\obj\Debug\net7.0\ref\DZ5_41.dll
