@@ -3,53 +3,40 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-int CountPositiveNumbers()
+
+void FillArray(int[] array)
 {
-    int countPositiveNum = 0;
-    string? NumbersRow = Console.ReadLine();
-    string number = "";
-    for (int i=0; i < NumbersRow.Length; i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        string currenti = NumbersRow[i].ToString();
-        if ( currenti == " " || currenti == ",")
-            {   
-                if (number == "")
-                    number = "0";
-                if (Convert.ToInt32(number)>0)
-                    countPositiveNum += 1;
-                number = "";
-            }
-        else
-            {
-               number += currenti;
-               if(i == NumbersRow.Length-1)
-                    {
-                    if (Convert.ToInt32(number)>0)
-                        countPositiveNum += 1;
-                    }
-            }
+        array[i] = new Random().Next(-1000, 1000);
+
     }
-    return countPositiveNum;
 }
-System.Console.WriteLine("Введите ряд целых чисел: ");
-int countPos = CountPositiveNumbers();
-System.Console.WriteLine($"Количество чисел больше нуля в данном ряду: {countPos}"); 
+void PrintArray(int[] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        System.Console.Write($"{array[i]}  ");
+    }
+}
+void PositiveNumbers(int[] array)
 
+{
+    int result = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] > 0)
+            result += 1;
 
-// Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, 
-// заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; 
-// значения b1, k1, b2 и k2 задаются пользователем.
+    }
+    System.Console.WriteLine($" Количество положительныых чисел из введённого запроса пользователем = {result} ");
 
-Console.WriteLine("Введите переменную b1: ");
-double b1 = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Введите переменную k1: ");
-double k1 = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Введите переменную b2: ");
-double b2 = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Введите переменную k2: ");
-double k2 = Convert.ToDouble(Console.ReadLine());
+}
 
-double x = -(b1 - b2) / (k1 - k2);
-double y = k1 * x + b1;
-
-Console.Write($"\n Точка пересечения двух прямых: [{x},{y}]");
+System.Console.WriteLine("Введите количество чисел для вашего решения: ");
+int num = Convert.ToInt32(System.Console.ReadLine());
+int[] array = new int[num];
+FillArray(array);
+PrintArray(array);
+System.Console.WriteLine();
+PositiveNumbers(array);
